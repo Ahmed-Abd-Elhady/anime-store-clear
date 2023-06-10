@@ -1,2 +1,5 @@
 # anime-store-clear
-cool anime website
+
+its cool anime website👍
+
+feel free to use anything here 🙌
