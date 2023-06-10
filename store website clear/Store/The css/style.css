@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    position: relative;
+
+}
+
+html {
+    background: url(../imgs/background.jpg);
+    background-repeat: no-repeat;
+
+}
+
+
+body {
+    height: 400px;
+    background: linear-gradient(rgb(20, 13, 221), #0195ff00);
+    width: 100%;
+}
+
+.container {
+    animation-name: opo;
+    animation-duration: 4s;
+}
+
+
+@keyframes opo {
+    from {
+        opacity: 0;
+
+        transform: rotate(20dg);
+
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+.navbar {
+    display: inline-block;
+    align-items: center;
+    padding: 20px;
+
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+
+}
+
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 100px;
+    font-size: 25px;
+    transition: 400ms;
+    padding-top: 28px;
+
+}
+
+nav ul li a {
+    transition: 0.40s;
+    animation-duration: 2s;
+    animation-name: pre;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+
+}
+
+@keyframes pre {
+    0% {
+        position: relative;
+        left: 420px;
+    }
+
+    50% {
+        position: relative;
+        left: 0;
+    }
+
+
+
+}
+
+
+
+.imgas img {
+    position: relative;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    right: 1400px;
+    opacity: 0;
+    animation-name: cold;
+    animation-delay: 5s;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.cold .imgeo img {
+    position: relative;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    right: 0px;
+    opacity: 0;
+    animation-name: cold;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.xer .xza {
+
+    position: relative;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 300px;
+    left: 1300px;
+    opacity: 0;
+    animation-name: cold1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+
+
+}
+
+
+
+
+@keyframes cold {
+    0% {
+
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+
+    100% {
+        top: 700px;
+
+    }
+}
+
+@keyframes cold1 {
+    0% {
+
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(30deg);
+    }
+
+    100% {
+        top: 700px;
+
+    }
+}
+
+
+
+
+nav ul li a::after {
+    content: '';
+    height: 3px;
+    background: rgb(0, 132, 255);
+    position: absolute;
+    transition: 300ms;
+
+
+}
+
+
+
+nav ul li a:hover::after {
+    width: 4px;
+    height: 20px;
+    margin: 6px;
+    position: absolute;
+
+}
+
+
+
+nav ul a:hover {
+    color: red;
+
+}
+
+
+.main {
+
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 25px;
+
+}
+
+.lol {
+    animation-name: axe;
+    animation-duration: 2s;
+
+}
+
+@keyframes axe {
+    from {
+        position: relative;
+        right: 420px;
+    }
+
+    to {
+        position: relative;
+        right: 0;
+    }
+}
+
+
+.logo {
+    position: absolute;
+    animation-name: yea;
+    transition: 1ms;
+    animation-iteration-count: infinite;
+    animation-duration: 100s;
+
+
+}
+
+@keyframes yea {
+    0% {
+        transform: rotate(120deg);
+    }
+
+    50% {
+        transform: rotate(1770deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+.logo:hover {
+    transform: rotate(270deg);
+}
+
+
+
+.c1 {
+    left: 1200px;
+    bottom: 120px;
+    background-size: 100%;
+    width: 250px;
+    height: 370px;
+    background-repeat: no-repeat;
+    /*
+    background-image: url(../clothes/g1.jpg);
+    */
+
+}
+
+.ax{
+    background-image: url(/Store/imgs/ak.jpg);
+    width: 120px;
+    height: 120px;
+}

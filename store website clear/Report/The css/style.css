@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    position: relative;
+
+
+}
+
+
+
+.container {
+    animation-name: opo;
+    animation-duration: 4s;
+
+}
+
+
+@keyframes opo {
+    from {
+        opacity: 0;
+
+        transform: rotate(20dg);
+
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+.navbar {
+    display: inline-block;
+    align-items: center;
+    padding: 20px;
+
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 100px;
+    font-size: 25px;
+    transition: 400ms;
+    padding-top: 28px;
+
+}
+
+nav ul li a {
+    transition: 0.40s;
+    animation-duration: 2s;
+    animation-name: pre;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+
+}
+
+@keyframes pre {
+    0% {
+        position: relative;
+        left: 420px;
+    }
+
+    50% {
+        position: relative;
+        left: 0;
+    }
+
+
+
+}
+
+
+
+nav ul li a::after {
+    content: '';
+    height: 3px;
+    background: red;
+    position: absolute;
+    transition: 300ms;
+
+
+}
+
+
+
+nav ul li a:hover::after {
+    width: 4px;
+    height: 20px;
+    margin: 6px;
+    position: absolute;
+
+}
+
+
+
+nav ul a:hover {
+    color: red;
+
+}
+
+
+.main {
+
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 25px;
+
+}
+
+.lol {
+    animation-name: axe;
+    animation-duration: 2s;
+
+}
+
+@keyframes axe {
+    from {
+        position: relative;
+        right: 420px;
+    }
+
+    to {
+        position: relative;
+        right: 0;
+    }
+}
+
+
+.logo {
+    position: absolute;
+    animation-name: yea;
+    transition: 1ms;
+    animation-iteration-count: infinite;
+    animation-duration: 100s;
+
+
+}
+
+@keyframes yea {
+    0% {
+        transform: rotate(120deg);
+    }
+
+    50% {
+        transform: rotate(1770deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+.logo:hover {
+    transform: rotate(270deg);
+}

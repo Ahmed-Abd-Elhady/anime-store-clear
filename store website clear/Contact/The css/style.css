@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+html {
+    background: url(../imgs/4835516.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+
+body {
+    height: 400px;
+
+    background: linear-gradient(rgba(254, 6, 171, 0.714), #0195ff00);
+    width: 100%;
+}
+
+
+.container {
+    animation-name: opo;
+    animation-duration: 4s;
+
+}
+
+
+@keyframes opo {
+    from {
+        opacity: 0;
+
+        transform: rotate(20dg);
+
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+.navbar {
+    display: inline-block;
+    align-items: center;
+    padding: 20px;
+
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 100px;
+    font-size: 25px;
+    transition: 400ms;
+    padding-top: 28px;
+
+}
+
+nav ul li a {
+    transition: 0.40s;
+    animation-duration: 2s;
+    animation-name: pre;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+
+}
+
+@keyframes pre {
+    0% {
+        position: relative;
+        left: 420px;
+    }
+
+    50% {
+        position: relative;
+        left: 0;
+    }
+
+
+
+}
+
+
+
+nav ul li a::after {
+    content: '';
+    height: 3px;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    transition: 300ms;
+
+
+}
+
+
+
+nav ul li a:hover::after {
+    width: 4px;
+    height: 20px;
+    margin: 6px;
+    position: absolute;
+
+}
+
+
+
+nav ul a:hover {
+    color: red;
+
+}
+
+
+.main {
+
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 25px;
+
+}
+
+.lol {
+    animation-name: axe;
+    animation-duration: 2s;
+
+}
+
+@keyframes axe {
+    from {
+        position: relative;
+        right: 420px;
+    }
+
+    to {
+        position: relative;
+        right: 0;
+    }
+}
+
+
+.logo {
+    position: absolute;
+    animation-name: yea;
+    transition: 1ms;
+    animation-iteration-count: infinite;
+    animation-duration: 100s;
+
+
+}
+
+@keyframes yea {
+    0% {
+        transform: rotate(120deg);
+    }
+
+    50% {
+        transform: rotate(1770deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+.logo:hover {
+    transform: rotate(270deg);
+}
+
+.first_name {
+    position: relative;
+    left: 600px;
+    width: 200px;
+    height: 30px;
+    top: 200px;
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+
+    box-shadow: 0 1px 1px rgb(red, green, blue, 1);
+    border: none;
+    animation-name: an;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+}
+
+
+
+
+@keyframes tip1 {
+    0% {
+        content: 'A';
+        left: 120xp;
+
+    }
+}
+
+
+
+
+
+.first {
+    position: relative;
+    left: 620px;
+    width: 200px;
+    height: 30px;
+    top: 196px;
+    color: #fff;
+    font-size: 30px;
+    animation-name: an;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+}
+
+.unon {
+    animation-name: text1;
+    animation-duration: 2s;
+    animation-delay: 3s;
+}
+
+@keyframes text1 {
+    0% {
+
+        color: aqua;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+
+
+/*
+.first::before {
+    content: '';
+    position: absolute;
+    width: 67%;
+    top: 30px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ff0000;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.first:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+*/
+@keyframes an {
+    0% {
+        opacity: 0;
+
+        transform: rotate(20dg);
+
+    }
+
+    1% {
+
+        left: 0;
+    }
+
+
+
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes ans {
+    0% {
+        opacity: 0;
+
+        transform: rotate(20dg);
+
+    }
+
+    1% {
+
+        left: 350px;
+    }
+
+
+
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+.sec_name {
+    position: relative;
+    left: 1000px;
+    width: 198px;
+    height: 31px;
+    top: 142px;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    animation-name: ans;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.sec {
+    position: relative;
+    left: 1012px;
+    width: 200px;
+    height: 30px;
+    top: 138px;
+    color: #fff;
+    font-size: 30px;
+    animation-name: ans;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.sec::before {
+    content: '';
+    position: absolute;
+    width: 82%;
+    top: 30px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ff0000;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.sec:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.eml_name {
+    position: relative;
+    left: 599px;
+    width: 598px;
+    height: 31px;
+    top: 176px;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    animation-name: an;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.eml {
+    position: relative;
+    left: 605px;
+    width: 200px;
+    height: 30px;
+    top: 168px;
+    color: #fff;
+    font-size: 30px;
+    animation-name: an;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.eml::before {
+    content: '';
+    position: absolute;
+    width: 32%;
+    top: 30px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ff0000;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.eml:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.dec_name {
+    position: relative;
+    left: 599px;
+    width: 598px;
+    height: 161px;
+    top: 190px;
+    border-radius: 4px;
+    border: none;
+    font-size: 15px;
+    animation-name: an;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.dec {
+    position: relative;
+    left: 823px;
+    width: 200px;
+    height: 30px;
+    top: 180px;
+    color: #fff;
+    font-size: 30px;
+    animation-name: an;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}

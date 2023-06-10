@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    position: relative;
+
+
+}
+
+
+
+.container {
+    animation-name: opo;
+    animation-duration: 4s;
+
+}
+
+body {
+
+    background-color: black;
+
+}
+
+@keyframes opo {
+    from {
+        opacity: 0;
+
+        transform: rotate(20dg);
+
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+.navbar {
+    display: inline-block;
+    align-items: center;
+    padding: 20px;
+
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 100px;
+    font-size: 25px;
+    transition: 400ms;
+    padding-top: 28px;
+
+}
+
+nav ul li a {
+    transition: 0.40s;
+    animation-duration: 2s;
+    animation-name: pre;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+
+}
+
+@keyframes pre {
+    0% {
+        position: relative;
+        left: 420px;
+    }
+
+    50% {
+        position: relative;
+        left: 0;
+    }
+
+
+
+}
+
+
+
+nav ul li a::after {
+    content: '';
+    height: 3px;
+    background: red;
+    position: absolute;
+    transition: 300ms;
+
+
+}
+
+
+
+nav ul li a:hover::after {
+    width: 4px;
+    height: 20px;
+    margin: 6px;
+    position: absolute;
+
+}
+
+
+
+nav ul a:hover {
+    color: red;
+
+}
+
+
+.main {
+
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 25px;
+
+}
+
+.lol {
+    animation-name: axe;
+    animation-duration: 2s;
+
+}
+
+@keyframes axe {
+    from {
+        position: relative;
+        right: 420px;
+    }
+
+    to {
+        position: relative;
+        right: 0;
+    }
+}
+
+
+.logo {
+    position: absolute;
+    animation-name: yea;
+    transition: 1ms;
+    animation-iteration-count: infinite;
+    animation-duration: 100s;
+
+
+}
+
+@keyframes yea {
+    0% {
+        transform: rotate(120deg);
+    }
+
+    50% {
+        transform: rotate(1770deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.logo:hover {
+    transform: rotate(270deg);
+}
+
+
+
+.comaing {
+    color: #fff;
+    font-size: 60px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 200px;
+    animation-name: come;
+    animation-duration: 4s;
+    animation-delay: 2s;
+
+
+}
+
+@keyframes come {
+    20% {
+        opacity: 0.40;
+    }
+
+    50% {
+        opacity: 0.50;
+    }
+
+    60% {
+        opacity: 0.80;
+    }
+
+    70% {
+        opacity: 1;
+        top: 400px;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        top: 800px;
+        opacity: 0;
+    }
+
+}
+
+.a {
+    animation-name: flicker;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes blink {
+
+    0%,
+    22%,
+    36%,
+    75% {
+        /*ff65bd*/
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+            -0.2rem 0.1rem 1rem #ff0000, 0.2rem 0.1rem 1rem #ff65bd,
+            0 -0.5rem 2rem #fd0606, 0 0.5rem 3rem #ff2483;
+    }
+
+    28%,
+    33% {
+        color: #ff0000;
+        text-shadow: none;
+    }
+
+    82%,
+    97% {
+        color: #ff2483;
+        text-shadow: none;
+    }
+}
+
+.flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+
+@keyframes shine {
+    0% {
+
+        color: #6b1839;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+            -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+            0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+}
+
+@keyframes flicker {
+    from {
+        opacity: 1;
+    }
+
+    4% {
+        opacity: 0.9;
+    }
+
+    6% {
+        opacity: 0.85;
+    }
+
+    8% {
+        opacity: 0.95;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    11% {
+        opacity: 0.922;
+    }
+
+    12% {
+        opacity: 0.9;
+    }
+
+    14% {
+        opacity: 0.95;
+    }
+
+    16% {
+        opacity: 0.98;
+    }
+
+    17% {
+        opacity: 0.9;
+    }
+
+    19% {
+        opacity: 0.93;
+    }
+
+    20% {
+        opacity: 0.99;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    26% {
+        opacity: 0.94;
+    }
+
+    28% {
+        opacity: 0.98;
+    }
+
+    37% {
+        opacity: 0.93;
+    }
+
+    38% {
+        opacity: 0.5;
+    }
+
+    39% {
+        opacity: 0.96;
+    }
+
+    42% {
+        opacity: 1;
+    }
+
+    44% {
+        opacity: 0.97;
+    }
+
+    46% {
+        opacity: 0.94;
+    }
+
+    56% {
+        opacity: 0.9;
+    }
+
+    58% {
+        opacity: 0.9;
+    }
+
+    60% {
+        opacity: 0.99;
+    }
+
+    68% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.9;
+    }
+
+    72% {
+        opacity: 0.95;
+    }
+
+    93% {
+        opacity: 0.93;
+    }
+
+    95% {
+        opacity: 0.95;
+    }
+
+    97% {
+        opacity: 0.93;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
